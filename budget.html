@@ -200,7 +200,6 @@
         <input type="text" id="fromInput" placeholder="Enter from value" />
         <label for="toInput">To:</label>
         <input type="text" id="toInput" placeholder="Enter to value" />
-        <button type="submit" onclick="searchByBudget()">Search</button>
       </span>
 
       <div class="shared-checkbox" id="sharedCheckbox" style="display: none">
@@ -224,7 +223,7 @@
             <option value="5">5 Stars</option>
         </select>
     </div>
-      <button type="submit">Search</button>
+      <button type="submit" onclick="searchByBudget()">Search</button>
       <button type="submit" onclick="location.href='addListing.html'">Add listing</button>
       <button type="submit" onclick="location.href='findRoommate.html'">Find Roommate</button>
     </div>
@@ -432,7 +431,7 @@
             lng: -79.40704,
             title: "Family-Friendly Home with Garden",
             price: "$1250/month",
-            budget: 1250,
+            budget:1250,
             location: "Toronto, Canada",
             active: true,
             image: "img8.jpg",
