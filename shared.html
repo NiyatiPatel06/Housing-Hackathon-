@@ -177,7 +177,7 @@
     </style>
   </head>
   <body>
-    <h1>RentMaps</h1>
+    <h1>SharedMaps</h1>
     <div id="search-container">
       <button type="button" onclick="location.href='profile.html'" class="image-button">
         <img width="40" src="download.png" alt="Button Image"></button>
@@ -186,6 +186,14 @@
         <label for="distance">Distance (miles):</label>
         <input type="number" id="distance" value="10" />
       </span>
+
+      <select id="filter-dropdown" onchange="showSubmenu()">
+        <option value="all">No Additional filters</option>
+        <option value="budget">Budget</option>
+        <option value="shared">Shared</option>
+        <option value="gender">Gender</option>
+        <option value="rating">Rating</option> 
+      </select>
 
       <span class="submenu" id="budgetSubmenu" style="display: none">
         <label for="fromInput">From:</label>
@@ -357,6 +365,7 @@
         budgetSubmenu.style.display = "none";
         genderCheckbox.style.display = "none";
         ratingFilter.style.display = "none";
+        location.href = 'shared.html';
     } else if (dropdown.value === "gender") {
         genderCheckbox.style.display = "block";
         budgetSubmenu.style.display = "none";
