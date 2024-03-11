@@ -10,13 +10,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/addListing.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'addListing.html'));
-});
-
-app.get('/findRoommate.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'findRoommate.html'));
-});
 
 // Start the server
 app.listen(3000, () => {
