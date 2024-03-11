@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Roommate</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff; /* White background */
+            color: #333; /* Dark text color */
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9; /* Light gray background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #4caf50; /* Green label text */
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: calc(100% - 20px); /* Adjust width to fit container */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333; /* Dark text color */
+        }
+        textarea {
+            height: 100px; /* Set textarea height */
+            resize: vertical; /* Allow vertical resizing */
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50; /* Green button background */
+            color: #fff; /* White text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker shade of green on hover */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4caf50; /* Green title text */
+        }
+        .back-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #4caf50; /* Green button background */
+            color: #fff; /* White text color */
+            padding: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .back-btn:hover {
+            background-color: #45a049; /* Darker shade of green on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Find Roommate</h1>
+    <form action="/findARoommate.html" method="POST">
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="both">Both</option>
+        </select>
+        
+        <label for="age">Preferred Age:</label>
+        <input type="number" id="age" name="age" min="18" required>
+        
+        <label for="profession">Preferred Profession:</label>
+        <input type="text" id="profession" name="profession" required>
+        
+        <label for="location">Preferred Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        <label for="budget">Monthly Budget (CAD):</label>
+        <input type="number" id="budget" name="budget" min="0" required>
+        
+        <label for="duration">Duration of Stay (months):</label>
+        <input type="number" id="duration" name="duration" min="1" required>
+        
+        <label for="smoking">Smoking Preference:</label>
+        <select id="smoking" name="smoking" required>
+            <option value="" disabled selected>Select Smoking Preference</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        
+        <label for="pet">Pet Preference:</label>
+        <select id="pet" name="pet" required>
+            <option value="" disabled selected>Select Pet Preference</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        
+        <label for="other_preferences">Other Preferences:</label>
+        <textarea id="other_preferences" name="other_preferences" rows="4" required></textarea>
+        
+        <input type="submit" value="Find Roommate">
+    </form>
+
+    <a href="index.html" class="back-btn">Back to Home</a>
+</body>
+</html>
