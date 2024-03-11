@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matched Roommates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50; /* Green title */
+        }
+
+        .person {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .person img {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .person .details {
+            overflow: hidden;
+        }
+
+        .person .details p {
+            margin: 5px 0;
+        }
+
+        .person .details p strong {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .person .match-percentage {
+            clear: both;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button[type="submit"] {
+        padding: 10px 10px;
+        margin: 4px;
+        font-size: 16px;
+        background-color: #4caf50; /* Green button background */
+        color: #fff; /* White text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+      }
+
+      button[type="submit"]:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049; 
+      }/* Darker shade of green on hover */
+
+    </style>
+</head>
+<body>
+    <h1>Matched results</h1>
+    
+    <div class="person">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Person 1">
+        <div class="details">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Age:</strong> 25</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Occupation:</strong> Software Engineer</p>
+            <p><strong>Preferred Gender:</strong> Female</p>
+            <p><strong>Preferred Age Range:</strong> 20-30</p>
+            <p><strong>Preferred Occupation:</strong> Student or Working Professional</p>
+        </div>
+        <div class="match-percentage">Match Percentage: 85%</div>
+        <button type="submit">Connect</button>
+    </div>
+
+    <div class="person">
+        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Person 2">
+        <div class="details">
+            <p><strong>Name:</strong> Jane Smith</p>
+            <p><strong>Age:</strong> 22</p>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Occupation:</strong> Student</p>
+            <p><strong>Preferred Gender:</strong> Female</p>
+            <p><strong>Preferred Age Range:</strong> 20-25</p>
+            <p><strong>Preferred Occupation:</strong> Student</p>
+        </div>
+        <div class="match-percentage">Match Percentage: 95%</div>
+        <button type="submit">Connect</button>
+    </div>
+
+    <div class="person">
+        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Person 3">
+        <div class="details">
+            <p><strong>Name:</strong> Alex Johnson</p>
+            <p><strong>Age:</strong> 28</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Occupation:</strong> Doctor</p>
+            <p><strong>Preferred Gender:</strong> Male or Female</p>
+            <p><strong>Preferred Age Range:</strong> 25-35</p>
+            <p><strong>Preferred Occupation:</strong> Any</p>
+        </div>
+        <div class="match-percentage">Match Percentage: 75%</div>
+        <button type="submit">Connect</button>
+    </div>
+</body>
+</html>
