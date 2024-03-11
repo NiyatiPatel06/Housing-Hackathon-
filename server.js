@@ -3,7 +3,7 @@ const path = require('path'); // Add this line
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname)));
 
 // Define the route for serving the index.html file
 app.get('/', (req, res) => {
